@@ -60,7 +60,7 @@
          background-color:#f8f8f8;
          min-height:calc(100vh - 220px);
       }
-
+	   
       .menu {
         position:relative;
         float:right;
@@ -104,8 +104,9 @@
                   alert ("No Video URL found");
                } else {
 //                  var videlt = '<video id="myvideo" width="640" controls><source src="' + vidurl + '">Your browser does not support the video tag.</video>';
-                  var videlt = '<iframe width="640" src="'+vidurl+'"frameborder="0" allow="autoplay; encrypted-media" allowfullscreen> </iframe>'
+                  var videlt = '<iframe id="ifr" width="100%" src="'+vidurl+'"frameborder="0" allow="autoplay; encrypted-media" allowfullscreen> </iframe>'
                   $("#detail").html(videlt);
+		  $("#detail #ifr").height($("#detail).height());
                   // $("#myvideo")[0].play();
                }
             }
