@@ -104,7 +104,7 @@
                   alert ("No Video URL found");
                } else {
 //                  var videlt = '<video id="myvideo" width="640" controls><source src="' + vidurl + '">Your browser does not support the video tag.</video>';
-                  var videlt = '<iframe width="640" height="315" src="'+vidurl+'"> </iframe>'
+                  var videlt = '<iframe width="640" src="'+vidurl+'"frameborder="0" allow="autoplay; encrypted-media" allowfullscreen> </iframe>'
                   $("#detail").html(videlt);
                   // $("#myvideo")[0].play();
                }
@@ -118,8 +118,8 @@
          </script>
          <div id="toc">
             <a href="https://www.youtube.com/embed/jmq9COba1j4">Video 1</a><br>
-            <a href="https://www.youtube.com/watch?v=9Fo1v1y62a8&index=2&list=RDjmq9COba1j4">Video 2</a><br>
-            <a href="https://www.youtube.com/watch?v=6P7g59BnVW4&index=3&list=RDjmq9COba1j4">Video 3</a><br>
+            <a href="https://www.youtube.com/embed/9Fo1v1y62a8?list=RDjmq9COba1j4">Video 2</a><br>
+            <a href=""https://www.youtube.com/embed/6P7g59BnVW4?list=RDjmq9COba1j4">Video 3</a><br>
             <a href="">Video 4</a><br>
             <a href="">Video 5</a><br>
             <a href="">Video 6</a><br>
