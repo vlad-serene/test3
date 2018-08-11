@@ -105,8 +105,9 @@
                } else {
 //                  var videlt = '<video id="myvideo" width="640" controls><source src="' + vidurl + '">Your browser does not support the video tag.</video>';
                   var videlt = '<iframe id="ifr" width="100%" src="'+vidurl+'?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen> </iframe>'
-                  $("#detail").html(videlt);
 		  $("#detail #ifr").height($("#detail").height());
+                  $("#detail").html(videlt);
+		 
                   // $("#myvideo")[0].play();
                }
             }
